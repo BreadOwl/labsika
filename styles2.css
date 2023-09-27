@@ -1,0 +1,129 @@
+body{
+    background-image: url(https://phonoteka.org/uploads/posts/2021-05/1621824608_25-phonoteka_org-p-kosmicheskii-fon-dlya-saita-25.jpg);
+    color: white;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+main{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+header{
+    color: rgb(224, 149, 149);
+    padding: 20px 0;
+    text-align: center; 
+}
+
+footer{
+    background-color: black;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+a {
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 900;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+a:before {
+    content: '';
+    position: absolute;
+    filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, #BFE2FF 1em, #337AB7 50%), repeating-linear-gradient(45deg, #337AB7, #337AB7 1em, #FFF 1em, #BFE2FF 50%);
+    background-size: 3em 3em, 2em 2em;
+    animation-name: ani;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5s;
+}
+
+a:hover {
+    color: red;
+  }
+
+img{
+    display: block;
+    margin: 30px;
+    outline: 2px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    -o-transform: scale(1.2, 0.8);
+    -ms-transform: scale(1.2, 0.8);
+    -moz-transform: scale(1.2, 0.8);
+    -webkit-transform: scale(1.2, 0.8);
+    transform: scale(1.2, 0.8);
+    transition: .5s;
+}
+
+@keyframes ani {
+from {
+    background-position: 0 0;
+}
+to {
+    background-position: 100% 0;
+}
+}
+
+header span{
+    animation: lower 10s linear infinite;
+  }
+
+header span:hover{
+    animation-play-state: paused;
+  }
+
+@keyframes lower {
+    0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+      opacity:0.99; text-shadow: 0 0 80px rgb(224, 149, 149);
+    }
+    19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+      opacity:0.4; text-shadow: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+       padding: 10px 0;
+    }
+    main{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    img {
+        display: none;
+        visibility: hidden;
+    }
+ }
+
+ @media print { 
+    body { 
+        color:black;
+    }
+    a {
+        color: black;
+        font-size: 18px;
+    }
+    a:before {
+        display: none;
+    }
+    img {
+        display: none;
+        visibility: hidden;
+    }
+}
+

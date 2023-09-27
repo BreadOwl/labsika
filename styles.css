@@ -1,0 +1,41 @@
+body{
+    background-image: url(https://phonoteka.org/uploads/posts/2021-05/1621824608_25-phonoteka_org-p-kosmicheskii-fon-dlya-saita-25.jpg);
+    color: white;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+main{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+header{
+    color: rgb(224, 149, 149);
+    padding: 20px 0;
+    text-align: center; 
+}
+
+footer{
+    background-color: black;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: red;
+  }
+
+img{
+    display: block;
+    margin: 30px;
+    outline: 2px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+}
