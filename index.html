@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>"Воспоминания" - конструктор фотоальбомов</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <meta name="viewport" content = "width=device-width, initial-scale = 1">
+  </head>
+  <body>
+    <main>
+      <nav class="top-menu">
+        <ul class="menu">
+          <li><a class="logo" href=""><img src="">М</a></li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Печать</a></li>
+          <li><a href="">О сайте</a></li>
+          <li><a href="">Отзывы</a></li>
+          <li id="enter"><a href="">Войти</a></li>
+        </ul>
+      </nav>
+    <header></header>
+    <div class="create"></div>
+    <div class="alg">
+      Как создать свой альбом с фотографиями?
+      <br><ul class="sh">
+        <li><p>1. Выберите шаблон</p></li>
+        <li><p>2. Добавьте свои фотографии</p></li>
+        <li><p>3. Напечатайте альбом</p></li>
+      </ul>
+    </div>
+    <div class="shablon">
+      Вы можете выбрать любой шаблон, представленный в каталоге
+      <form class="filters-form" role="form">
+            <div id="category">
+                <h4>Категории</h4>
+                <div class="checkbox"><input type="checkbox" name="category[]" value="1"><p>День рождения</p></div>
+                <div class="checkbox"><input type="checkbox" name="category[]" value="2"><p>Свадьба</p></div>
+                <div class="checkbox"><input type="checkbox" name="category[]" value="3"><p>Поездка</p></div>
+                <div class="checkbox"><input type="checkbox" name="category[]" value="4"><p>Классика</p></div>
+            </div>
+            <div id="prices">
+              <h4>Фильтр по цене</h4>
+              <div id="prices-label">5000 - 50000 руб.</div>
+              <input type="hidden" id="min-price" name="min_price" value="5000">
+              <input type="hidden" id="max-price" name="max_price" value="50000">
+            </div>
+            <div class="sort">
+              <h4>Сортировка</h4>
+              <select id="sort" name="sort" class="form-control">
+                <option value="price_asc">По цене, сначала дешевые</option>
+                <option value="price_desc">По цене, сначала дорогие</option>
+                <option value="rating_desc">По популярности</option>
+                <option value="good_asc">По названию, A-Z</option>
+                <option value="good_desc">По названию, Z-A</option>
+              </select>
+            </div>
+       </form>
+       <div class="catalog">
+        <div class="shab"><img src="no.png" alt="Пример"><br>Шаблон</div>
+        <div class="shab"><img src="no.png" alt="Пример"><br>Шаблон</div>
+        <div class="shab"><img src="no.png" alt="Пример"><br>Шаблон</div>
+       </div>
+    </div>
+    <div class="print">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Поиск по адресу" title="Введите адрес">
+      <table id="address">
+        <tr class="header">
+          <th style="width:80%;">Адрес</th>
+          <th style="width:20%;"></th>
+        </tr>
+        <tr>
+          <td>Автозаводская</td>
+          <td><input type="button" value="Выбрать"></td>
+        </tr>
+        <tr>
+          <td>Электрозаводская</td>
+          <td><input type="button" value="Выбрать"></td>
+        </tr>
+      </table>
+    </div>
+    </main>
+    <footer> &copy; 2023 разработчик Игумнова Карина</footer>
+  </body>
+</html>
